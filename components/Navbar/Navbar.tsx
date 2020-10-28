@@ -6,7 +6,8 @@ import styles from './Navbar.module.css'
 export default function Navbar() {
   return (
     <nav className={styles.navbar}>
-      <menu>
+      <span>Avo Fan</span>
+      <menu className={styles.menu}>
         <Link href="/">
           <a>Home</a>
         </Link>
