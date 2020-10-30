@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import { useRouter } from 'next/router'
 
+import styles from './product.module.css'
+
 const ProductPage = () => {
   const [avo, setAvo] = useState<TProduct>()
 
@@ -17,9 +19,18 @@ const ProductPage = () => {
   // console.log(avo)
 
   return (
-    <section>
+    <section className={styles.section}>
       <h1>Página producto: {avo?.name}</h1>
-      <p>Descripción: {avo?.attributes.description}</p>
+      <div className={styles.content}>
+        
+        <img src={avo?.image} alt="" className={styles.img} />
+        
+        <div>
+          <p>Descripción: {avo?.attributes.description}</p>
+          <h4>Price $ {avo?.price}</h4>
+        </div>
+
+      </div>
     </section>
   )
 }

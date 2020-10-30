@@ -1,0 +1,16 @@
+.section {
+    /* background: chartreuse; */
+    display: grid;
+    grid-template-columns: 90%;
+    justify-content: center;
+}
+
+.img {
+    width: 100%;
+}
+
+@media screen and (min-width: 565px) {
+    .content {
+        display: flex;
+    }
+}

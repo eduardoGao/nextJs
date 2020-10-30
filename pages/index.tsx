@@ -28,9 +28,9 @@ const HomePage = () => {
 
       {productList.map((product) => (
         <Avos
-          key={product.id} 
+          key={product.id}
           name={product.name}
-          img={product.image} 
+          img={product.image}
           taste={product.attributes.taste}
           shape={product.attributes.shape}
           link={`/product/${product.id}`}

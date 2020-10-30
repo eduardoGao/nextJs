@@ -11,7 +11,7 @@ const Avos = ({ name, taste, img, shape, link }) => {
             <p>{taste}</p>
             <p>{shape}</p>
             <Link href={link}>
-                <button>Más</button>
+                <button className={styles.avos__button}>Más</button>
             </Link>
         </div>
     )

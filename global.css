@@ -7,5 +7,21 @@ body {
 }
 
 main {
-    background: chartreuse;
+    background: #f2f2f2;
+    display: grid;
+    grid-template-columns: minmax(280px, 1fr);
+    grid-gap: 1em;
+}
+
+@media screen and (min-width: 600px) {
+    main {
+        /* grid-template-columns: 600px; */
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    main {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
