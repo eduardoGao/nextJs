@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import Link from 'next/link'
 
+
 import Avos from "../components/Avos/Avos";
 
 const HomePage = () => {

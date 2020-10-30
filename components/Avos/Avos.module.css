@@ -1,0 +1,9 @@
+.avos {
+    background: hotpink;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.avos__image {
+    width: 100%;
+}

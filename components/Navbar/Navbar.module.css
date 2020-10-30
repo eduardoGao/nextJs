@@ -1,11 +1,13 @@
 .navbar {
-    background: salmon;
     height: 90px;
+    /* width: 100%; */
+    padding: 0 1em;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
+    border-bottom: 1px solid gray;
 }
 
 .menu a {
-    margin-right: 1em;
+    margin-left: .5em;
 }
