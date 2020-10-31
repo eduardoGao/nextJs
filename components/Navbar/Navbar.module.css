@@ -5,9 +5,22 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid gray;
+    background: white;
+}
+
+.navbar__logo {
+    display: flex;
+    align-items: center;
+}
+
+.navbar__logo span {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #58b368;
 }
 
 .menu a {
     margin-left: .5em;
+    text-decoration: none;
+    color: inherit;
 }

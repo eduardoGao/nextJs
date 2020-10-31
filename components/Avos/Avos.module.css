@@ -8,14 +8,15 @@
 }
 
 .avos__image {
-    width: 100%;
+    width: 80%;
     border-top-left-radius: 1em;
     border-top-right-radius: 1em;
 }
 
 .avos__button {
     font-family: inherit;
-    background: rebeccapurple;
+    font-size: 1em;
+    background: #58b368;
     color: white;
     padding: .7em;
     width: 100%;

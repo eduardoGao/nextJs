@@ -20,13 +20,13 @@ const ProductPage = () => {
 
   return (
     <section className={styles.section}>
-      <h1>Página producto: {avo?.name}</h1>
+      <h1 className={styles.h1}>{avo?.name}</h1>
       <div className={styles.content}>
         
         <img src={avo?.image} alt="" className={styles.img} />
         
-        <div>
-          <p>Descripción: {avo?.attributes.description}</p>
+        <div className={styles.description}>
+          <p>{avo?.attributes.description}</p>
           <h4>Price $ {avo?.price}</h4>
         </div>
 

@@ -1,0 +1,15 @@
+.footer {
+    background: #454d66;
+    height: 150px;
+    padding: 2em;
+    /* margin-top: 2em; */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.img {
+    margin-top: 2em;
+}

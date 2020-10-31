@@ -1,12 +1,18 @@
 .section {
-    /* background: chartreuse; */
+    background: white;
     display: grid;
     grid-template-columns: 90%;
     justify-content: center;
+
 }
 
 .img {
     width: 100%;
+}
+
+.description {
+    /* margin: 0 1em; */
+    font-size: .85em;
 }
 
 @media screen and (min-width: 565px) {
