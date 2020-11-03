@@ -1,21 +1,20 @@
 import React, { useState, useEffect } from 'react'
 import Link from 'next/link'
 
-
 import Avos from "../components/Avos/Avos";
 
-const HomePage = () => {
-  const [productList, setProductList] = useState([])
+export async function getServerSideProps() {
+  const res = await fetch('https://platzi-avo.vercel.app/api/avo')
+  const { data: productList }: TAPIAvoResponse = await res.json()
 
-  useEffect(() => {
-    window
-      .fetch('/api/avo')
-      .then((response) => response.json())
-      .then(({ data, length }) => {
-        setProductList(data)
-      })
-  }, [])
+  return {
+    props: {
+      productList,
+    }, // will be passed to the page component as props
+  }
+}
 
+const HomePage = ({ productList }: { productList: TProduct[] }) => {
   return (
     <main>
 
